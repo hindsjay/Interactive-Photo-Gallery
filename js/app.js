@@ -4,6 +4,12 @@ $(document).ready(function() {
     thumbnail: true,
     animateThumb: false,
     showThumbByDefault: false,
-    mode: 'lg-fade'
+    mode: 'lg-fade',
+    share: false,
+    zoom: false,
+    fullScreen: false,
+    autoplayControls: false,
+    download: false,
+    toggleThumb: false
   }); 
 });
