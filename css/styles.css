@@ -6,19 +6,29 @@ body {
   background-color: black;
 }
 
-.main-header {
+.main-header,
+.search-bar {
   text-align: center;
+}
+
+.main-header {
   color: white;
   font-family: 'Lobster', cursive;
   letter-spacing: .2em;
 }
 
 .search-bar {
-  text-align: center;
   margin: 25px 0;
 }
 
+input,
+input::placeholder {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 300;
+}
+
 input {
+  padding-left: 10px;
   width: 70%;
   height: 35px;
   max-width: 360px;
@@ -27,10 +37,7 @@ input {
 }
 
 input::placeholder {
-  padding-left: 10px;
-  font-family: 'Roboto', sans-serif;
   font-size: .8em;
-  font-weight: 300;
 }
 
 .flex-container {
@@ -56,9 +63,31 @@ input::placeholder {
 }
 
 
+/* **********  lightGallery plugin modifications  ********** */
+
+.lg-sub-html {
+  font-family: 'Open Sans', sans-serif;
+  max-width: 600px;
+  margin: 0 auto;
+  bottom: 80px;
+}
+
+.lg-thumb-outer .lg-toogle-thumb {
+  display: none;
+}
+
+
+
+/* **********  media queries  ********** */
+
 @media (min-width: 468px) {
   .flex-container {
     max-width: 468px;
+  }
+
+  .lg-outer .lg-image {
+    width: 70%!important;
+    max-width: 850px;
   }
 }
 
