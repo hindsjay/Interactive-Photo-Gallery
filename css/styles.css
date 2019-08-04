@@ -4,6 +4,7 @@
 
 body {
   background-color: black;
+  background-image: radial-gradient(circle, white, black);
 }
 
 .main-header,
@@ -55,7 +56,6 @@ input::placeholder {
 
 .item img {
   border-radius: 8px;
-  border: 2px solid grey;
 }
 
 .item img:hover {
